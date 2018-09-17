@@ -34,6 +34,11 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  css: [
+    '~/assets/styles/variables.scss',
+    '~/assets/styles/mixins.scss',
+    '~/assets/styles/main.scss'
+  ]
 }
 

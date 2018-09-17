@@ -16,10 +16,16 @@
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
+    "ajv": "^6.5.3",
     "babel-eslint": "^8.2.1",
+    "css-loader": "^1.0.0",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "vue-style-loader": "^4.1.2"
   }
 }

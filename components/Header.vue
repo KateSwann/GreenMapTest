@@ -17,7 +17,7 @@
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     .header {
         background-color: gold;
         width: 100%;
