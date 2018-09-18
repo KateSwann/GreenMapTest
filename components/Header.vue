@@ -11,7 +11,7 @@
                 <nuxt-link to="/placesmap">Places Map</nuxt-link>
             </li>
             <li>
-                <nuxt-link to="/placeslist">Places List</nuxt-link>
+                <nuxt-link to="/places">Places List</nuxt-link>
             </li>
         </ul>
     </header>
