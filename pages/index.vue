@@ -1,6 +1,8 @@
 <template>
   <div>
     <Header />
+
+    <FlickitySlider />
     
     <h1>Welcome home dude</h1>
 
@@ -26,17 +28,19 @@
   </div>
 </template>
 
+
 <script>
 import AppLogo from '@/components/AppLogo.vue'
 import Header from '@/components/Header.vue'
 import PlacePreview from '@/components/Place/PlacePreview.vue'
-import Flickity from 'vue-flickity'
+import FlickitySlider from '@/components/FlickitySlider.vue'
 
 export default {
   components: {
     AppLogo,
     Header,
-    PlacePreview
+    PlacePreview,
+    FlickitySlider
   }
 }
 </script>
