@@ -52,11 +52,11 @@ import '@/node_modules/slick-carousel/slick/slick.scss'
 import '@/node_modules/slick-carousel/slick/slick-theme.scss'
 
 export default {
-  components: {
-    AppLogo,
-    Header,
-    PlacePreview
-  },
+    components: {
+        AppLogo,
+        Header,
+        PlacePreview
+    },
 
     data() {
         return {
@@ -81,7 +81,6 @@ export default {
         };
     },
 
-    // All slick methods can be used too, example here
     methods: {
         next() {
             this.$refs.slick.next();

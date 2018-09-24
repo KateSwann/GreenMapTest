@@ -44,9 +44,9 @@ module.exports = {
     '~/assets/styles/mixins.scss',
     '~/assets/styles/main.scss'
   ],
-  plugins: [{
-    src: '~/plugins/slick-carousel.js',
-    ssr: false
-  }],
+  plugins: [
+    { src: '~/plugins/slick-carousel.js', ssr: false },
+    { src: '~/plugins/buefy.js' }
+  ],
 }
 
