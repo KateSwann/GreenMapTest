@@ -19,8 +19,6 @@
       </slick>
     </div>
 
-
-    
     <h1>Welcome home dude</h1>
 
     <section class="places-list">
@@ -50,8 +48,6 @@
 import AppLogo from '@/components/AppLogo.vue'
 import Header from '@/components/Header.vue'
 import PlacePreview from '@/components/Place/PlacePreview.vue'
-import Slick from 'vue-slick'
-import $ from 'jquery'
 import '@/node_modules/slick-carousel/slick/slick.scss'
 import '@/node_modules/slick-carousel/slick/slick-theme.scss'
 
@@ -59,8 +55,7 @@ export default {
   components: {
     AppLogo,
     Header,
-    PlacePreview,
-    Slick
+    PlacePreview
   },
 
     data() {
@@ -101,7 +96,7 @@ export default {
             this.$nextTick(() => {
                 this.$refs.slick.reSlick();
             });
-        },
+        }
     }
 }
 </script>

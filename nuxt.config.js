@@ -43,6 +43,10 @@ module.exports = {
     '~/assets/styles/variables.scss',
     '~/assets/styles/mixins.scss',
     '~/assets/styles/main.scss'
-  ]
+  ],
+  plugins: [{
+    src: '~/plugins/slick-carousel.js',
+    ssr: false
+  }],
 }
 
