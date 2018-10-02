@@ -42,7 +42,8 @@ module.exports = {
   css: [
     '~/assets/styles/variables.scss',
     '~/assets/styles/mixins.scss',
-    '~/assets/styles/main.scss'
+    '~/assets/styles/main.scss',
+    { src: '~assets/styles/buefy-overrides.scss', lang: 'scss' }
   ],
   plugins: [
     { src: '~/plugins/slick-carousel.js', ssr: false },
