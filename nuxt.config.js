@@ -43,11 +43,14 @@ module.exports = {
     '~/assets/styles/variables.scss',
     '~/assets/styles/mixins.scss',
     '~/assets/styles/main.scss',
-    { src: '~assets/styles/buefy-overrides.scss', lang: 'scss' }
+    { src: '~assets/styles/bootstrap-overrides.scss', lang: 'scss' }
   ],
   plugins: [
     { src: '~/plugins/slick-carousel.js', ssr: false },
-    { src: '~/plugins/buefy.js' }
+    { src: '~/plugins/bootstrap-vue.js' }
+  ],
+  modules: [
+    ['bootstrap-vue/nuxt', { css: false }]
   ]
 }
 
