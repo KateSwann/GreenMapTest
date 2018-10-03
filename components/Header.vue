@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-light" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <nuxt-link class="navbar-item" to="/">
               <img src="~/assets/images/greenmap_logo.png" width="98" height="50">

@@ -48,6 +48,6 @@ module.exports = {
   plugins: [
     { src: '~/plugins/slick-carousel.js', ssr: false },
     { src: '~/plugins/buefy.js' }
-  ],
+  ]
 }
 
