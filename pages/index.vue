@@ -3,128 +3,71 @@
     <Header />
 
     <section>
-        <div class="columns">
-            <div class="column is-3">
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-3by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-left">
-                        <figure class="image is-38x48">
-                          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
-                      </div>
-                      <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                      </div>
-                    </div>
+      <h2>Example heading <b-badge>New</b-badge></h2>
 
-                    <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                      <a href="#">#css</a> <a href="#">#responsive</a>
-                      <br>
-                      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-3by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-left">
-                        <figure class="image is-38x48">
-                          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
-                      </div>
-                      <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                      </div>
-                    </div>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </nav>
 
-                    <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                      <a href="#">#css</a> <a href="#">#responsive</a>
-                      <br>
-                      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-3by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-left">
-                        <figure class="image is-38x48">
-                          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
-                      </div>
-                      <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                      </div>
-                    </div>
+      <div>
+        <b-card title="Card Title"
+                img-src="https://picsum.photos/600/300/?image=25"
+                img-alt="Image"
+                img-top
+                tag="article"
+                style="max-width: 20rem;"
+                class="mb-2">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <b-button href="#" variant="primary">Go somewhere</b-button>
+        </b-card>
+      </div>
 
-                    <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                      <a href="#">#css</a> <a href="#">#responsive</a>
-                      <br>
-                      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="column is-3">
-                <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-3by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-left">
-                        <figure class="image is-38x48">
-                          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                        </figure>
-                      </div>
-                      <div class="media-content">
-                        <p class="title is-3">John Smith</p>
-                        <p class="subtitle is-6">@johnsmith</p>
-                      </div>
-                    </div>
+      <!-- card-1.vue -->
 
-                    <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                      <a href="#">#css</a> <a href="#">#responsive</a>
-                      <br>
-                      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
+      <b-navbar toggleable="md" type="dark" variant="info">
+
+        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+
+        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+
+        <b-collapse is-nav id="nav_collapse">
+
+          <b-navbar-nav>
+            <b-nav-item href="#">Link</b-nav-item>
+            <b-nav-item href="#" disabled>Disabled</b-nav-item>
+          </b-navbar-nav>
+
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+
+            <b-nav-form>
+              <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
+              <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+            </b-nav-form>
+
+            <b-nav-item-dropdown text="Lang" right>
+              <b-dropdown-item href="#">EN</b-dropdown-item>
+              <b-dropdown-item href="#">ES</b-dropdown-item>
+              <b-dropdown-item href="#">RU</b-dropdown-item>
+              <b-dropdown-item href="#">FA</b-dropdown-item>
+            </b-nav-item-dropdown>
+
+            <b-nav-item-dropdown right>
+              <!-- Using button-content slot -->
+              <template slot="button-content">
+                <em>User</em>
+              </template>
+              <b-dropdown-item href="#">Profile</b-dropdown-item>
+              <b-dropdown-item href="#">Signout</b-dropdown-item>
+            </b-nav-item-dropdown>
+          </b-navbar-nav>
+
+        </b-collapse>
+      </b-navbar>
+
+      <!-- navbar-1.vue -->
     </section>
 
     <div style="width: 600px;">

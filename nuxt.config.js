@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -43,11 +45,13 @@ module.exports = {
     '~/assets/styles/variables.scss',
     '~/assets/styles/mixins.scss',
     '~/assets/styles/main.scss',
+    '~/node_modules/bootstrap/dist/css/bootstrap.css',
+    '~/node_modules/bootstrap-vue/dist/bootstrap-vue.css',
     { src: '~assets/styles/bootstrap-overrides.scss', lang: 'scss' }
   ],
   plugins: [
     { src: '~/plugins/slick-carousel.js', ssr: false },
-    { src: '~/plugins/bootstrap-vue.js' }
+    { src: '~/plugins/bootstrap-vue.js', ssr: false }
   ],
   modules: [
     ['bootstrap-vue/nuxt', { css: false }]
